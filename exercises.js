@@ -29,6 +29,18 @@ function firstReverse(str) {
  * ie: "oreo" => 3
  */
 
+ function vowelCount(str) {
+ 	var vowelList = 'aeiouAEIOU';
+ 	var count = 0;
+
+ 	for (var i = 0; i < str.length; i++) {
+ 		if (vowelList.indexOf(str[i]) !== -1) {
+ 			count += 1;
+ 		}
+ 	}
+ 	return count;
+ }
+
  /** Function: timeConvert
  * The function will take the str parameter representing the amount of minutes being passed in and
  * return the number of hours and minutes. Seperate the number of hours
@@ -65,7 +77,7 @@ function firstReverse(str) {
 module.exports = {
     firstReverse: firstReverse,
     alphaOrder: alphaOrder,
-    vowelCount: null,
+    vowelCount: vowelCount,
     timeConvert: null,
     repeatString: null
 }
