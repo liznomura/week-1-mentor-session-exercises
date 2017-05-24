@@ -71,6 +71,13 @@ function firstReverse(str) {
  * i.e repeatString("money", 3) => "moneymoneymoney".
  */
 
+function repeatString(str, num) {
+	var resultString = ''; 
+	for (var i = 0; i < num; i++) {
+		resultString += str
+	}
+	return resultString
+}
 
 /**
  * Below here we see a module.exports which is set to an object with a bunch of keys.
@@ -91,5 +98,5 @@ module.exports = {
     alphaOrder: alphaOrder,
     vowelCount: vowelCount,
     timeConvert: timeConvert,
-    repeatString: null
+    repeatString: repeatString,
 }
