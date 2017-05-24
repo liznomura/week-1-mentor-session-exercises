@@ -5,6 +5,12 @@
  * @return {string} reversed
  * ie: "cat" => "tac"
  */
+function firstReverse(str) {
+	return str.split("").reverse().join("");
+}
+
+firstReverse("ghost");
+
 
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
