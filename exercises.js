@@ -6,10 +6,9 @@
  * ie: "cat" => "tac"
  */
 function firstReverse(str) {
-	return str.split("").reverse().join("");
+		return str.split("").reverse().join("");
 }
 
-firstReverse("ghost");
 
 
  /** Function: alphaOrder
@@ -62,7 +61,7 @@ firstReverse("ghost");
  */
 
 module.exports = {
-    firstReverse: null,
+    firstReverse: firstReverse,
     alphaOrder: null,
     vowelCount: null,
     timeConvert: null,
